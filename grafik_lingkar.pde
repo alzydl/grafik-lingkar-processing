@@ -36,17 +36,8 @@ void draw() {
   for(int i=0;i<sum.length;i++){
     fill(30*i,255,255);
     deg = sum[i]/ total*360;
-    //lastAngle=sudutAwal+deg;
     
     arc(200, 200, 350, 350, lastAngle, lastAngle+radians(deg));
-    //fill(0);
-    //textSize(10);
-    //textAlign(CENTER,CENTER);
-    
-    //text(freq[i] + " '" + nf(sum[i],0,0) + "'",         
-    //     200 + 150 * cos(radians(sudutAwal+deg/2)),
-    //     200 + 150 * sin(radians(sudutAwal+deg/2)));
-    //sudutAwal=lastAngle;
 
         halfAngle = radians(lastAngle/10+deg/2); 
         x1=200 + 125* cos(halfAngle+lastAngle);
